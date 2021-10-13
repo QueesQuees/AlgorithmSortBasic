@@ -1,0 +1,44 @@
+  
+   1.Nhận xét về hiệu năng của 3 thuật toán với 3 kiểu dữ liệu:
+
+        - Thuật toán bubble sort và seclect sort  có hiệu năng thấp nhất với thời gian chạy dài nhất. không nên đuợc sử dụng"
+        - Thuật toán ínertion sort có hiệu năng tốt nhất với thời gian chạy ngắn nhát. Nên được sử dụng.
+        
+	- Tuy nhiên các kiểu dữ liệu khác nhau có thời gian chạy khác nhau dữ liệu đã được sáp xếp có 
+            thời gian chạy thấp nhát, dũ liệu được săp xếp ngược  sẽ có thời gian chạy lâu nhất
+
+   2. Giải thích.
+	- Tạo 3 mảng có các phần tử giống nhau bằng ranrom
+	- sắp xếp lại 2 mảng để có kiểu đã được sắp xếp và xắp xếp ngược lại.
+	- Truyền lần lượt 3 mảng vào lần lượt từng thuật toán một.
+	- Ghi lại thời gian bắt dầu và kết thúc của từng  thuật toán với các kiểu dữ liệu khác nhau. sau đó time = end - start,
+	- so sánh thời gian chạy của các thuật toán với nhau và đưa ra nhận xét.
+   
+   3. Bubble sort
+	-Giả sử mảng có n phần tử.
+	-Độ phức tạp : O(n^2).
+	-Độ phức tạp thời gian của trường hợp xấu nhất và trung bình: O (n * n). 
+          Trường hợp xấu nhất xảy ra khi mảng được sắp xếp ngược lại.
+	-Độ phức tạp về thời gian của trường hợp tốt nhất: O (n). 
+	  Trường hợp tốt nhất xảy ra khi mảng đã được sắp xếp.
+		- 
+   4. select Sort.
+	-Giả sử mảng có n phần tử. Có 2 vòng láp nên độ phức tạp là n*n = n^2
+	-Độ phức tạp : O(n^2).
+	-Độ phức tạp về thời gian trong trường hợp xấu nhất là : O(n^2).
+	 	Nếu ta muốn sắp xếp mảng tăng dần trong khi9 mảng hiện tại giảm dần nó sẽ xảy ra.
+	-Độ phức tạp về thời gian trong trường hợp tốt nhất là : O(n)
+		Xảy ra khi mảng đã được sắp xếp.
+	-Độ phức tạp của trường hợp trung bình: O(n2)
+		Nó xảy ra khi các phần tử của mảng có thứ tự lộn xộn (không tăng dần cũng không giảm dần).
+   5. Insertion sort
+	- Giả sử mảng có n phần tử
+	- Độ phức tạp : O(n^2).
+	- Độ phức tạp về thời gian trong trường hợp tốt nhất là : O(n)
+		Khi mảng đã được sắp xếp, vòng lặp bên ngoài chạy trong n số lần trong khi vòng lặp bên trong hoàn toàn không chạy. 
+		Vì vậy, chỉ có n số phép so sánh được thực hiện. Do đó, độ phức tạp là tuyến tính.
+	- Độ phức tạp về thời gian trong trường hợp xấu nhất là : O(n^2).
+		Giả sử, một mảng có thứ tự tăng dần và ta muốn sắp xếp nó theo thứ tự giảm dần. Trong trường hợp này, 
+		trường hợp xấu nhất sẽ xảy ra.
+	- Độ phức tạp của trường hợp trung bình: O(n^2)
+		Xảy ra khi các phần tử của một mảng có thứ tự lộn xộn (không tăng dần cũng không giảm dần).
